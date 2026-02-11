@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti 💙</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="pantallaInicio">
+    <h1>💌 Tengo algo para ti 💌</h1>
+    <button onclick="iniciar()">Abrir sorpresa</button>
+</div>
+
+<audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+    <h1>💙 Mi reina hermosa 💙</h1>
+    <h2>Quería hacer algo especial para ti...</h2>
+
+    <img class="nuestraFoto" src="foto.jpg">
+
+    <div class="contador">
+        <h3>Llevamos juntos:</h3>
+        <p id="tiempo"></p>
+    </div>
+
+    <h2 class="pregunta">¿Quieres ser mi San Valentín? 💙</h2>
+
+    <div class="botones">
+        <button id="si">SÍ 💙</button>
+        <button id="no">No 💔</button>
+    </div>
+    <p id="mensajeChistoso" class="chistoso"></p>
+
+    <div id="carta" class="carta"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

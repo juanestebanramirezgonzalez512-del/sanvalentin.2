@@ -1,0 +1,113 @@
+body{
+margin: 0;
+padding: 0;
+min-height: 100vh;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(to bottom, #6ec6ff, #2196f3);
+overflow-x: hidden;
+}
+
+.container{
+width: 90%;
+max-width: 400px;
+margin: 40px auto;
+padding: 20px;
+border-radius: 25px;
+background: rgba(255,255,255,0.2);
+backdrop-filter: blur(10px);
+text-align: center;
+}
+
+.nuestraFoto{
+     width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+h1{
+    color: #1E3A8A;
+}
+
+.botones{
+    margin-top: 20px;
+}
+
+button{
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#si{
+    background-color: #1E90FF;
+    color: white;
+}
+
+#no{
+    background-color: #ccc;
+    position: relative;
+}
+
+.contador{
+    background: #E0F2FF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Pantalla inicio */
+#pantallaInicio{
+    position: fixed;
+    background: linear-gradient(135deg,#1E90FF,#89CFF0);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+#pantallaInicio button{
+    padding: 15px 25px;
+    font-size: 18px;
+    background: white;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Carta */
+.carta{
+    margin-top: 20px;
+    background: #f0f8ff;
+    padding: 15px;
+    border-radius: 15px;
+    display: none;
+}
+
+/* Corazones azules */
+.corazon{
+    position: fixed;
+    top: -10px;
+    font-size: 22px;
+    animation: caer linear infinite;
+}
+
+@keyframes caer{
+    to{
+        transform: translateY(110vh);
+    }
+}
+img{
+width: 100%;
+height: auto;
+border-radius: 20px;
+object-fit: cover;
+}
